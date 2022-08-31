@@ -1,0 +1,12 @@
+{
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCb1FiIA44tGXHZmIhuIh3TD5Nc\nj/xwQxkIJT/WqvVIJ6buM6RBD7ui2Se6I7pJKHly6Gw3MX8wLMs5xcYxNwxBwmNy\nAE3/QEKPnXkdaWeJSsGR/DyfuEtpWhOElE9ZbsJmWr8sMU10krdCi1ZFGoZv2Kj+\nvoYSN9MZuPTlcSNs0QIDAQAB\n-----END PUBLIC KEY-----",
+    "key_alg": "RSA",
+    "hash_alg": "SHA-512",
+    "enc_alg": "PKCS1_OAEP",
+    "credentials": {
+        "id": "test",
+        "username": "test",
+        "password": "test"
+    },
+    "signature": "TEMPORARY"
+}null
