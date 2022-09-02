@@ -98,19 +98,17 @@ def verify(msg, signature, public):
     return rsa_key._verify(msg, signature, public)
 
 
-def generate_key_pair(keysize: int = 1024, rand_func=None):
+def generate_key_pair(keysize: int = 1024):
     """Generate a linked pair of RSA keys.
     See  https://en.wikipedia.org/wiki/RSA_(cryptosystem) for more information.
 
     Args:
         keysize (int): The size of the key to generate. Defaults to 1024.
-        e (int, optional): The "E" value of the RsaKey encryption. Defaults to 65537.
-        rand_func (function, optional): A function that generates random bytes. Defaults to None.
 
     Returns:
         Tuple: (public_key: RsaKey, private_key: RsaKey)
     """
-    return rsa_key._newkeys(keysize,  rand_func=rand_func)
+    return rsa_key._newkeys(keysize)
 
 
 def share_key(key, nShares=3):

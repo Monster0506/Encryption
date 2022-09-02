@@ -30,10 +30,8 @@ def _combine_split_key(shares, enc, nonce, tag, passphrase=None):
     return RSA.importKey(cipher.decrypt_and_verify(enc, tag), passphrase)
 
 
-def _newkeys(keysize=1024, e=65537, rand_func=None):
-    if rand_func is None:
-        rand_func = Random.new().read
-    key = RSA.generate(keysize, rand_func, e)
+def _newkeys(keysize=1024):
+    key = RSA.generate(keysize)
     private, public = key, key.publickey()
     return public, private
 
